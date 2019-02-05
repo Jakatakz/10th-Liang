@@ -1,0 +1,8 @@
+A resource is declared and created followed by the keyword try. Note that the resources are
+enclosed in the parentheses (lines 9–12). The resources must be a subtype of AutoCloseable
+such as a PrinterWriter that has the close() method. A resource must be declared and
+created in the same statement and multiple resources can be declared and created inside the
+parentheses. The statements in the block (lines 12–18) immediately following the resource
+declaration use the resource. After the block is finished, the resource’s close() method
+is automatically invoked to close the resource. Using try-with-resources can not only avoid
+errors but also make the code simpler.
